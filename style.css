@@ -306,6 +306,69 @@ padding: 6px 8px;
 font-size: 0.9rem;
 }
 
+/* ABOUT PAGE – OPTIE A (STRIKTE LAYOUT) */
+
+.about {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 80px 60px;
+}
+
+.about h1 {
+    font-size: 2.8rem;
+    margin-bottom: 50px;
+    letter-spacing: -0.5px;
+}
+
+/* GRID LAYOUT */
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 50px 70px; /* verticale, horizontale spacing */
+    align-items: start;
+}
+
+/* BOVENSTE TWEE TEKST BLOKKEN */
+.col1, .col2, .col3 {
+    font-size: 1.15rem;
+    line-height: 1.75;
+    color: var(--muted);
+}
+
+/* POSITIES */
+.col1 {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.col2 {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.col3 {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+/* FOTO RECHTSONDER */
+.about-photo {
+    grid-column: 2;
+    grid-row: 2;
+
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    object-fit: cover;
+
+    justify-self: center; /* MOOI STRAK GECENTREERD */
+    margin-left: -20px;   /* schuift foto iets naar links voor perfecte balans */
+    
+    box-shadow: 0 12px 28px rgba(0,0,0,0.10);
+}
+
+
 .topbar nav a {
 margin-left: 8px;
 font-size: 0.8rem;
