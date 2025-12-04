@@ -1,4 +1,3 @@
-// Fade-in voor basis secties
 ScrollReveal().reveal('.hero, .about, .projects', {
     duration: 900,
     distance: '40px',
@@ -8,7 +7,6 @@ ScrollReveal().reveal('.hero, .about, .projects', {
     interval: 200
 });
 
-// Project cards stagger effect
 ScrollReveal().reveal('.project-card', {
     duration: 900,
     distance: '50px',
@@ -18,7 +16,6 @@ ScrollReveal().reveal('.project-card', {
     easing: 'ease-out'
 });
 
-// About foto animatie
 ScrollReveal().reveal('.about-photo', {
     duration: 1000,
     distance: '60px',
@@ -27,7 +24,6 @@ ScrollReveal().reveal('.about-photo', {
     easing: 'ease-out'
 });
 
-// Titels minimal slide
 ScrollReveal().reveal('h1', {
     duration: 900,
     distance: '20px',
