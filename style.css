@@ -186,17 +186,16 @@ margin: 0 auto;
 
 /* FOTO – RECHTS ONDER */
 .about-photo {
-    grid-column: 2;
-    grid-row: 2;
-    width: 320px;
-    height: 320px;
-    border-radius: 50%;
+    width: 300px;
+    height: 300px;
     object-fit: cover;
-
-    justify-self: end;      /* foto naar de rechterkant */
-    align-self: start;      /* bovenaan uitlijnen */
-
-    box-shadow: 0 12px 28px rgba(0,0,0,0.10);
+    border-radius: 50%;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+/* TEXTBLOKKEN */
+.col1, .col2, .col3 {
+    font-size: 1.15rem;
+@@ -157,11 +169,16 @@ html, body {
+    grid-row: 1;
 }
 
 
