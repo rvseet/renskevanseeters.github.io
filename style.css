@@ -120,37 +120,68 @@ html, body {
    ABOUT PAGE
 ================================= */
 
+/* ABOUT PAGE – STRAKKE LAYOUT */
 .about {
     max-width: 1100px;
     margin: 0 auto;
-    padding: 80px 60px;
+    padding: 100px 60px;
 }
-
-.about-wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 50px;
-}
-
-
-.about-photo {
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 50%;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.12);
-}
-
 
 .about h1 {
-    white-space: nowrap;
+    font-size: 2.8rem;
+    margin-bottom: 60px;
+    letter-spacing: -0.5px;
 }
 
-.about-text p {
-    font-size: 1.15rem;
-    color: var(--muted);
+/* ULTRA-STRIKT GRID */
+.about-grid { 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    column-gap: 80px;    /* horizontale spacing tussen kolommen */
+    row-gap: 50px;       /* verticale spacing */
+    align-items: start;
 }
+
+/* TEXTBLOKKEN */
+.col1, .col2, .col3 {
+    font-size: 1.15rem;
+    line-height: 1.75;
+    color: var(--muted);
+    max-width: 100%;
+}
+
+/* POSITIE TOEWĲZING */
+.col1 {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.col2 {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.col3 {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+/* FOTO – RECHTS ONDER */
+.about-photo {
+    grid-column: 2;
+    grid-row: 2;
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    object-fit: cover;
+
+    justify-self: end;      /* foto naar de rechterkant */
+    align-self: start;      /* bovenaan uitlijnen */
+
+    box-shadow: 0 12px 28px rgba(0,0,0,0.10);
+}
+
 
 /* ================================
    PROJECT GRID
