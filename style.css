@@ -28,8 +28,12 @@ html, body {
    TOPBAR
 ================================= */
 
+/* ================================
+   TOPBAR
+================================= */
+
 .topbar {
-    width: 140%;
+    width: 100%;
     background: rgba(255, 255, 255, 0.75);
     backdrop-filter: blur(12px);
     position: fixed;
@@ -49,8 +53,13 @@ html, body {
     letter-spacing: -0.5px;
 }
 
+.topbar nav {
+    width: 350px;               /* <-- DIT HEB JE NODIG */
+    display: flex;
+    justify-content: space-between;
+}
+
 .topbar nav a {
-    margin-left: 30px;
     text-decoration: none;
     color: var(--text);
     font-weight: 500;
@@ -58,20 +67,6 @@ html, body {
     font-size: 1rem;
 }
 
-.topbar nav a::after {
-    content: "";
-    position: absolute;
-    bottom: -3px;
-    left: 0;
-    height: 2px;
-    width: 0%;
-    background: var(--text);
-    transition: 0.25s ease;
-}
-
-.topbar nav a:hover::after {
-    width: 100%;
-}
 
 /* ================================
    FLOATY SHAPES
