@@ -175,12 +175,12 @@ html, body {
     height: 320px;
     border-radius: 50%;
     object-fit: cover;
-
-    justify-self: end;      /* foto naar de rechterkant */
-    align-self: start;      /* bovenaan uitlijnen */
-
+    justify-self: center;   /* foto netjes centreren */
+    margin-left: -10px;     /* kleine correctie naar links */
+    align-self: start;
     box-shadow: 0 12px 28px rgba(0,0,0,0.10);
 }
+
 
 
 /* ================================
