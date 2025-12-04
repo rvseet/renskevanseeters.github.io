@@ -1,0 +1,149 @@
+/* Kleuren palet */
+:root {
+    --bg: #faf7f5;
+    --text: #222;
+    --accent: #e7c8ff;
+    --accent2: #c2f0e3;
+    --accent3: #ffe6b3;
+    --card: #ffffff;
+    --font: "Inter", sans-serif;
+}
+
+/* BASIS */
+body {
+    margin: 0;
+    font-family: var(--font);
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    padding-top: 95px; /* ruimte voor topbar */
+}
+
+/* TOPBAR */
+.topbar {
+    width: 100%;
+    background: rgba(250, 247, 245, 0.85); 
+    backdrop-filter: blur(6px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    padding: 18px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topbar nav a {
+    margin-left: 25px;
+    text-decoration: none;
+    color: var(--text);
+    font-weight: 500;
+    position: relative;
+}
+
+.topbar nav a::after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--text);
+    transition: 0.25s ease;
+}
+
+.topbar nav a:hover::after {
+    width: 100%;
+}
+
+/* HERO */
+.hero {
+    padding: 100px 40px;
+    max-width: 800px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+/* SHAPES */
+.shape {
+    position: absolute;
+    border-radius: 50%;
+    z-index: -2; /* belangrijk */
+    filter: blur(55px);
+    opacity: 0.7;
+}
+
+.shape1 { width: 250px; height: 250px; top: 100px; left: -80px; background: var(--accent); }
+.shape2 { width: 200px; height: 200px; bottom: 50px; right: -60px; background: var(--accent2); }
+.shape3 { width: 180px; height: 180px; top: 400px; right: 120px; background: var(--accent3); }
+
+/* PROJECT GRID */
+.projects {
+    padding: 60px 40px;
+}
+
+.projects h1 {
+    letter-spacing: -0.5px;
+    margin-bottom: 10px;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.project-card {
+    background: var(--card);
+    border-radius: 16px;
+    padding: 24px;
+    border: 1px solid rgba(0,0,0,0.05);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 18px 40px rgba(0,0,0,0.1);
+}
+
+.project-card h3 {
+    margin-top: 0;
+}
+
+/* ABOUT PAGE */
+.about {
+    max-width: 950px;
+    padding: 60px 40px;
+}
+
+.about-wrapper {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-photo {
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 10px 35px rgba(0,0,0,0.1);
+    margin-right: -45px; /* SPEELSE VERPLAATSING RECHTS */
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 40px;
+    opacity: 0.6;
+}
