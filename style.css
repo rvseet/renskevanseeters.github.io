@@ -32,6 +32,7 @@ html, body {
    TOPBAR
 ================================= */
 
+
 .topbar {
     width: 100%;
     background: rgba(255, 255, 255, 0.75);
@@ -47,27 +48,14 @@ html, body {
     border-bottom: 1px solid rgba(0,0,0,0.06);
 }
 
-.topbar h2 {
-    margin: 0;
-    font-size: 1.3rem;
-    letter-spacing: -0.5px;
-}
-
 .topbar nav {
+    width: 90%;                 /* 🔥 DIT MAAKT NAV 90% VAN DE BREEDTE */
     display: flex;
-    gap: 30px;
+    justify-content: flex-end;  /* naar rechts duwen */
+    gap: 40px;                  /* ruimte tussen de links */
     align-items: center;
-    width: auto;       /* BELANGRIJK — nooit vaste breedte */
 }
 
-
-.topbar nav a {
-    color: var(--text);
-    text-decoration: none;
-    font-size: 1rem;
-    font-weight: 500;
-    white-space: nowrap;   /* voorkomt afbreken of verstoppen */
-}
 
 
 
