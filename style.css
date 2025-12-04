@@ -54,18 +54,21 @@ html, body {
 }
 
 .topbar nav {
-    width: 350px;               /* <-- DIT HEB JE NODIG */
     display: flex;
-    justify-content: space-between;
+    gap: 30px;
+    align-items: center;
+    width: auto;       /* BELANGRIJK — nooit vaste breedte */
 }
 
+
 .topbar nav a {
-    text-decoration: none;
     color: var(--text);
-    font-weight: 500;
-    position: relative;
+    text-decoration: none;
     font-size: 1rem;
+    font-weight: 500;
+    white-space: nowrap;   /* voorkomt afbreken of verstoppen */
 }
+
 
 
 /* ================================
