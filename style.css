@@ -317,4 +317,17 @@ body::after {
     animation: auroraMove 20s ease-in-out infinite;
 }
 
+  .shape {
+    z-index: -4 !important;
+}
+
+body::before {
+    z-index: -3 !important;
+}
+
+body::after {
+    z-index: -1 !important;
+}
+
+
 
